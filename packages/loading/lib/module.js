@@ -1,3 +1,7 @@
+import 'console-emojis'
+// const boxen = require('boxen')
+const terminalLink = require('terminal-link')
+
 module.exports = function NuxtLoadingScreen () {
   if (!this.options.dev) {
     return
@@ -5,8 +9,31 @@ module.exports = function NuxtLoadingScreen () {
 
   const defu = require('defu')
   const LoadingUI = require('./loading')
-
   const { nuxt } = this
+
+  // Tip
+  const { motd } = require('motd-json')
+  const motdMessages = require('./messages')
+  const motdOptions = {
+    tags: {
+      version: nuxt.version,
+      modules: [
+        ...Object.keys(nuxt.options.modules),
+        ...Object.keys(nuxt.options.buildModules)
+      ]
+    }
+  }
+
+  const getTip = () => {
+    const { text, link, version } = motd(motdMessages, motdOptions) || {}
+    // eslint-disable-next-line no-console
+    console.bulb(text)
+    // eslint-disable-next-line no-console
+    console.books(terminalLink('Docs', link))
+    // console.log(boxen('💡' + text, { padding: 1 }))
+
+    return { text, link, version }
+  }
 
   const baseURL = nuxt.options.router.base + '_loading'
   const options = this.options.build.loadingScreen = defu(this.options.build.loadingScreen, {
@@ -14,7 +41,8 @@ module.exports = function NuxtLoadingScreen () {
     baseURLAlt: baseURL,
     altPort: false,
     image: undefined,
-    colors: {}
+    colors: {},
+    tip: getTip()
   })
 
   const loading = new LoadingUI(options)
@@ -35,6 +63,7 @@ module.exports = function NuxtLoadingScreen () {
   })
 
   nuxt.hook('bundler:progress', (states) => {
+    // TODO: Change tip
     loading.setStates(states)
   })
 

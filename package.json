@@ -32,5 +32,6 @@
     "unfetch": "latest",
     "vue": "latest",
     "vue-template-compiler": "latest"
-  }
+  },
+  "dependencies": {}
 }

@@ -105,3 +105,57 @@ h4 {
   background-color: #2F495E;
 }
 
+.alert{
+  max-width: 480px;
+  background-color: #f7fafc;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-left: 4px solid #e2e8f0;
+  border-radius: .25rem;
+}
+.alert-wrapper{
+  display:flex;
+  align-items: center;
+}
+.alert-icon{
+  padding-top: .25rem;
+  flex-shrink: 0;
+  align-self: flex-start;
+}
+.alert-icon svg{
+  width: 1.25rem;
+  height: 1.25rem;
+  display: block;
+  color: #ffd104;
+}
+.alert-content{
+  font-family: Quicksand,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  color: #2f495e;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-left: .5rem;
+  line-height: 1.5;
+}
+.alert-content code{
+  background-color:#e2e8f0;
+  color: #2c5282;
+  font-weight: 500;
+  padding: .25rem;
+  border-radius: .25rem;
+}
+
+.alert-button{
+  background-color: #00c58e;
+  border-radius: .25rem;
+  color: #fff;
+  font-size: .75rem;
+  font-weight: 500;
+  margin: 0 .5rem;
+  padding: .25rem .75rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline;
+}
+.alert-button:hover{
+  background-color: #00e0a1;
+}

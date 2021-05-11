@@ -1,0 +1,142 @@
+[
+  {
+    "message": {
+      "text": "Middleware are JS function executed before the component creation. ACL can easily be done with `middleware: ['isConnected', 'isAdmin'].",
+      "link": "https://nuxtjs.org/guides/concepts/context-helpers#redirecting-users--accessing-the-store",
+      "version": "v2.x"
+    }
+  },
+  {
+    "message": {
+      "text": "Trigger a message when your user is loosing internet connection with `$nuxt.isOffline`.",
+      "link": "https://nuxtjs.org/guides/concepts/context-helpers#connection-checker",
+      "version": "v2.x"
+    }
+  },
+  {
+    "message": {
+      "text": "Refresh the current page without fully reloading the page by using `$nuxt.refresh()`.",
+      "link": "https://nuxtjs.org/guides/concepts/context-helpers#refreshing-page-data",
+      "version": "v2.x"
+    }
+  },
+  {
+    "message": {
+      "text": "Inject or execute your code only on the client side with `process.client`.",
+      "link": "https://nuxtjs.org/guides/concepts/context-helpers#process-helpers",
+      "version": "v2.x"
+    }
+  },
+  {
+    "message": {
+      "text": "Generate a static site by adding `target: static` to your nuxt.js config and using the `generate` command.",
+      "link": "https://nuxtjs.org/guides/features/deployment-targets#static-hosting",
+      "version": "v2.x"
+    }
+  },
+  {
+    "message": {
+      "text": "Build a single page application by adding `mode: spa` to your nuxt.js config and using the `build` command.",
+      "link": "https://nuxtjs.org/guides/features/rendering-modes#spa",
+      "version": "v2.x"
+    }
+  },
+  {
+    "message": {
+      "text": "Generate a SSR application by adding `target: server` to your nuxt.js with `mode: universal` which are the default values.",
+      "link": "https://nuxtjs.org/guides/features/deployment-targets#server-hosting",
+      "version": "v2.x"
+    }
+  },
+  {
+    "message": {
+      "text": "Create a dynamic route by prefixing your filename with an underscore: `_slug.vue` => `/:slug`.",
+      "link": "https://nuxtjs.org/guides/features/file-system-routing#dynamic-routes",
+      "version": "v2.x"
+    }
+  },
+  {
+    "message": {
+      "text": "Access to the current route parameters with `this.$route.params`.",
+      "link": "https://nuxtjs.org/guides/features/file-system-routing#locally-accessing-route-params",
+      "version": "v2.x"
+    }
+  },
+  {
+    "message": {
+      "text": "Create an `_.vue` page component to generate the `/*` route that match all URLs.",
+      "link": "https://nuxtjs.org/guides/features/file-system-routing#unknown-dynamic-nested-routes",
+      "version": "v2.x"
+    }
+  },
+  {
+    "message": {
+      "text": "Customize the Nuxt.js router with the `router` property in your nuxt.js config.",
+      "link": "https://nuxtjs.org/guides/features/file-system-routing#the-router-property",
+      "version": "v2.x"
+    }
+  },
+  {
+    "message": {
+      "text": "Use the `fetch()` hook to fetch data in your components (called after the component instance is created on the server side).",
+      "link": "https://nuxtjs.org/guides/features/data-fetching#the-fetch-hook",
+      "version": "v2.x"
+    }
+  },
+  {
+    "message": {
+      "text": "Use `asyncData()` in your page components to fetch the page data before its rendered.",
+      "link": "https://nuxtjs.org/guides/features/data-fetching#async-data",
+      "version": "v2.x"
+    }
+  },
+  {
+    "message": {
+      "text": "Ignore a file by prefixing it with a `-`",
+      "link": "https://nuxtjs.org/guides/features/configuration#the-ignoreprefix-property",
+      "version": "v2.x"
+    }
+  },
+  {
+    "message": {
+      "text": "Modify the host and port of your application server with the command line `HOST=0 PORT=8000 npm run dev`. (0 will give your local IP address)",
+      "link": "https://nuxtjs.org/guides/features/configuration#edit-host-and-port",
+      "version": "v2.x"
+    }
+  },
+  {
+    "message": {
+      "text": "Style the `linkExactActiveClass` using the class `.nuxt-link-exact-active`",
+      "link": "https://nuxtjs.org/guides/features/nuxt-components#linkexactactiveclass",
+      "version": "v2.x"
+    }
+  },
+  {
+    "message": {
+      "text": "Use the `client-only` component to purposely render a component only on the client side.",
+      "link": "https://nuxtjs.org/guides/features/nuxt-components#the-client-only-component",
+      "version": "v2.x"
+    }
+  },
+  {
+    "message": {
+      "text": "Add transitions to your pages by adding `transition: 'fade'` and adding the class name `.home-enter-active{...}`",
+      "link": "https://nuxtjs.org/guides/features/transitions",
+      "version": "v2.x"
+    }
+  },
+  {
+    "message": {
+      "text": "Use require when working with dynamic images `:src=\"require(`~/assets/img/${image}.jpg`)\"`",
+      "link": "https://nuxtjs.org/guides/directory-structure/assets#images",
+      "version": "v2.x"
+    }
+  },
+  {
+    "message": {
+      "text": "Run `npx nuxt build -a` to analyze your production bundle.",
+      "link": "https://nuxtjs.org/guides/configuration-glossary/configuration-build#analyze",
+      "version": "v2.x"
+    }
+  }
+]
